@@ -1,12 +1,13 @@
-# React Express Starter Pack
+# React Express ChatGPT
 
-> Create full stack apps with React and Express. Run your client and server with a single command. 
+> 透過React + Express連接ChatGPT的API
 
-### Redux Version
-This version does not include Redux
-[Click Here For Redux Version](https://github.com/bradtraversy/react_redux_express_starter) 
+### 請先取得API key
 
-## Quick Start
+1.登入後進行至頭像列表的view api keys取得自己的API key
+2.並到server.js將api key修改為自己的key
+
+## 使用
 
 ``` bash
 # Install dependencies for server
@@ -26,18 +27,7 @@ npm run client
 
 # Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
+### 引用的專案
 
-## App Info
-
-### Author
-
-Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
-
-### Version
-
-1.0.0
-
-### License
-
-This project is licensed under the MIT License
+[react_express_starter](https://github.com/bradtraversy/react_express_starter)
+已經建立好express的專案，方便執行node

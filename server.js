@@ -21,7 +21,7 @@ const app = express();
   const {question} = req.query;
   const prompt = question;
   const model = "image-alpha-001";
-  const apiKey = "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";
+  const apiKey = "你的私鑰";
   async function generateImage() {
     const headers = {
       'Content-Type': 'application/json',
@@ -44,6 +44,7 @@ const app = express();
         body: data
       });
       let json = await response.json();
+      console.log(json)
       dataUrl =json.data[0].url   
       return dataUrl
       //  fetch('https://api.openai.com/v1/images/generations', {
@@ -73,7 +74,7 @@ app.get('/api/openai', cors(), async(req, res) => {
   const getAIdata = async()=>{
     const configuration = new Configuration({
         organization: "org-995E46dMYrJB1aGmeg8F3r1f",
-        apiKey:"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",
+        apiKey:"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",
     });
     const openai = new OpenAIApi(configuration);
     
